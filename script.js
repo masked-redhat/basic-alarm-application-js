@@ -57,6 +57,7 @@ inputs.forEach(e => {
         if (Number(val) > max || Number(val) < min) {
             e.target.value = max;
         }
+        e.target.value = Number(e.target.value)
     })
 })
 
