@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A simple alarm clock application">
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
     <title>Alarm Clock Simple</title>
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js" defer></script>
@@ -12,23 +13,23 @@
 
 <body>
     <header>
-        <button>For</button>
-        <button>to</button>
+        <button id="for" class="selected">For</button>
+        <button id="to">till</button>
     </header>
     <main>
         <form id="alarm" onsubmit="return false;">
             <section id="time">
                 <span class="inputContainer">
                     <label for="hour">Hour</label>
-                    <input type="number" name="hour" id="hour" min="0" max="23" placeholder="h">
+                    <input type="number" name="hour" id="hour" min="0" max="24" placeholder="h">
                 </span>
                 <span class="inputContainer">
                     <label for="minute">Minute</label>
-                    <input type="number" name="minute" id="minute" min="0" max="59" placeholder="m">
+                    <input type="number" name="minute" id="minute" min="0" max="60" placeholder="m">
                 </span>
                 <span class="inputContainer">
                     <label for="second">second</label>
-                    <input type="number" name="second" id="second" min="0" max="59" placeholder="s">
+                    <input type="number" name="second" id="second" min="0" max="60" placeholder="s">
                 </span>
             </section>
             <section id="date">
@@ -42,7 +43,7 @@
                 </span>
                 <span class="inputContainer">
                     <label for="year">year</label>
-                    <input type="number" name="year" id="year" min="2024" max="2030" placeholder="y">
+                    <input type="number" name="year" id="year" min="0" max="2030" placeholder="y">
                 </span>
             </section>
             <button type="submit" id="set">Set Alarm</button>

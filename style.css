@@ -30,6 +30,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background: var(--color-1);
+    transition: none;
 }
 
 button {
@@ -58,7 +59,8 @@ header button {
     font-weight: 600;
 }
 
-header button:hover {
+header button:hover,
+.selected {
     background: var(--color-3);
     color: white;
     border-color: var(--color-3);
