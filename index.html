@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple alarm clock application">
+    <title>Alarm Clock Simple</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <button>For</button>
+        <button>to</button>
+    </header>
+    <main>
+        <form id="alarm" onsubmit="return false;">
+            <section id="time">
+                <span class="inputContainer">
+                    <label for="hour">Hour</label>
+                    <input type="number" name="hour" id="hour" min="0" max="23" placeholder="h">
+                </span>
+                <span class="inputContainer">
+                    <label for="minute">Minute</label>
+                    <input type="number" name="minute" id="minute" min="0" max="59" placeholder="m">
+                </span>
+                <span class="inputContainer">
+                    <label for="second">second</label>
+                    <input type="number" name="second" id="second" min="0" max="59" placeholder="s">
+                </span>
+            </section>
+            <section id="date">
+                <span class="inputContainer">
+                    <label for="date">date</label>
+                    <input type="number" name="day" id="day" min="1" max="31" placeholder="d">
+                </span>
+                <span class="inputContainer">
+                    <label for="month">month</label>
+                    <input type="number" name="month" id="month" min="1" max="12" placeholder="m">
+                </span>
+                <span class="inputContainer">
+                    <label for="year">year</label>
+                    <input type="number" name="year" id="year" min="2024" max="2030" placeholder="y">
+                </span>
+            </section>
+            <button type="submit" id="set">Set Alarm</button>
+        </form>
+    </main>
+    <footer>
+        <p>Copyright © Masked-Redhat 2024.</p>
+    </footer>
+</body>
+
+</html>
